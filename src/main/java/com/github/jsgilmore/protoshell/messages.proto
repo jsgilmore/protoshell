@@ -1,0 +1,70 @@
+package messages;
+
+option java_package = "main.java.com.github.jsgilmore.protoshell";
+option java_outer_classname = "ShellMessages";
+
+message TaskComponentMapping {
+	optional string Task = 1;
+	optional string Component = 2;
+}
+
+message Topology {
+	optional int64 TaskId = 1;
+	repeated TaskComponentMapping TaskComponentMappings = 2;
+}
+
+message Conf {
+	optional string Key = 1;
+	optional string Value = 2;
+}
+
+message Context {
+	optional string PidDir = 1;
+	optional Topology Topology = 2;
+	repeated Conf Confs = 3;
+}
+
+message Pid {
+	optional int32 Pid = 1;
+}
+
+message TupleMetadata {
+	optional string Id = 1;
+	optional string Comp = 2;
+	optional string Stream = 3;
+	optional int64 Task = 4;
+}
+
+message TupleProto {
+	optional TupleMetadata TupleMetadata = 1;
+	repeated bytes Contents = 2;
+}
+
+message TaskIds {
+	repeated int32 TaskIds = 1;
+}
+
+message SpoutMsg {
+	optional string Command = 1;
+	optional string Id = 2;
+}
+
+message EmissionMetadata {
+	optional string Command = 1;
+	optional string Id = 2;
+	repeated string Anchors = 3;
+	optional string Stream = 4;
+	optional int64 Task = 5;
+	optional string Msg = 6;
+}
+
+message EmissionProto {
+	optional EmissionMetadata EmissionMetadata = 1;
+	repeated bytes Contents = 2;
+}
+
+message Test {
+	optional string Name = 1;
+	optional int32 Number = 2;
+	optional bytes Data = 3;
+}
