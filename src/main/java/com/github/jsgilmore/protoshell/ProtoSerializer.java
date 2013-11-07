@@ -22,9 +22,9 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-import backtype.storm.multilang.Emission;
+import backtype.storm.multilang.ShellMsg;
 import backtype.storm.multilang.ISerializer;
-import backtype.storm.multilang.Immission;
+import backtype.storm.multilang.BoltMsg;
 import backtype.storm.multilang.NoOutputException;
 import backtype.storm.multilang.SpoutMsg;
 import backtype.storm.task.TopologyContext;
@@ -82,37 +82,37 @@ public class ProtoSerializer implements ISerializer {
 	}
 
 	@Override
-	public Emission readEmission() throws IOException, NoOutputException {
+	public ShellMsg readShellMsg() throws IOException, NoOutputException {
 		ShellMessages.EmissionProto emissionProto = (ShellMessages.EmissionProto)readMessage(ShellMessages.EmissionProto.PARSER);
-		Emission emission = new Emission();
+		ShellMsg shellMsg = new ShellMsg();
 		ShellMessages.EmissionMetadata meta = emissionProto.getEmissionMetadata();
 
 		List<String> anchors = meta.getAnchorsList();
-		emission.setAnchors(anchors);
+		shellMsg.setAnchors(anchors);
 
 		String command = meta.getCommand();
-		emission.setCommand(command);
+		shellMsg.setCommand(command);
 
 		String id = meta.getId();
-		emission.setId(id);
+		shellMsg.setId(id);
 
 		String msg = meta.getMsg();
-		emission.setMsg(msg);
+		shellMsg.setMsg(msg);
 
 		String stream = meta.getStream();
-		emission.setStream(stream);
+		shellMsg.setStream(stream);
 
 		long task = meta.getTask();
-		emission.setTask(task);
+		shellMsg.setTask(task);
 
 		for (ByteString o: emissionProto.getContentsList()) {
-			emission.addTuple(o);
+		    shellMsg.addTuple(o);
 		}
-		return emission;
+		return shellMsg;
 	}
 
 	@Override
-	public void writeImmission(Immission immission) throws IOException {
+	public void writeBoltMsg(BoltMsg immission) throws IOException {
 		ShellMessages.TupleMetadata tupleMetadata = ShellMessages.TupleMetadata.newBuilder()
     			.setId(immission.getId())
     			.setComp(immission.getComp())
@@ -122,8 +122,7 @@ public class ProtoSerializer implements ISerializer {
     	ShellMessages.TupleProto.Builder tupleBuilder = ShellMessages.TupleProto.newBuilder()
     			.setTupleMetadata(tupleMetadata);
     	for (Object object: immission.getTuple()) {
-    		ByteString byteString = ByteString.copyFrom((byte[])object);
-    		tupleBuilder.addContents(byteString);
+    		tupleBuilder.addContents((ByteString)object);
     	}
         writeMessage(tupleBuilder.build());
 	}
@@ -152,7 +151,6 @@ public class ProtoSerializer implements ISerializer {
 
 	private void writeMessage(Message msg) throws IOException {
         msg.writeDelimitedTo(processIn);
-        processIn.flush();
     }
 
 	private Object readMessage(Parser parser) throws IOException {

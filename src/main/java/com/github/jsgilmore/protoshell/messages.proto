@@ -42,15 +42,15 @@ message Pid {
 	optional int32 Pid = 1;
 }
 
-message TupleMetadata {
+message BoltMsgMeta {
 	optional string Id = 1;
 	optional string Comp = 2;
 	optional string Stream = 3;
 	optional int64 Task = 4;
 }
 
-message TupleProto {
-	optional TupleMetadata TupleMetadata = 1;
+message BoltMsgProto {
+	optional BoltMsgMeta BoltMsgMeta = 1;
 	repeated bytes Contents = 2;
 }
 
@@ -63,7 +63,7 @@ message SpoutMsg {
 	optional string Id = 2;
 }
 
-message EmissionMetadata {
+message ShellMsgMeta {
 	optional string Command = 1;
 	optional string Id = 2;
 	repeated string Anchors = 3;
@@ -72,8 +72,8 @@ message EmissionMetadata {
 	optional string Msg = 6;
 }
 
-message EmissionProto {
-	optional EmissionMetadata EmissionMetadata = 1;
+message ShellMsgProto {
+	optional ShellMsgMeta ShellMsgMeta = 1;
 	repeated bytes Contents = 2;
 }
 
