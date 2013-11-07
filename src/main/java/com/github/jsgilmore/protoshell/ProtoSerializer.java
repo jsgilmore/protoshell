@@ -83,9 +83,9 @@ public class ProtoSerializer implements ISerializer {
 
 	@Override
 	public ShellMsg readShellMsg() throws IOException, NoOutputException {
-		ShellMessages.EmissionProto emissionProto = (ShellMessages.EmissionProto)readMessage(ShellMessages.EmissionProto.PARSER);
+		ShellMessages.ShellMsgProto emissionProto = (ShellMessages.ShellMsgProto)readMessage(ShellMessages.ShellMsgProto.PARSER);
 		ShellMsg shellMsg = new ShellMsg();
-		ShellMessages.EmissionMetadata meta = emissionProto.getEmissionMetadata();
+		ShellMessages.ShellMsgMeta meta = emissionProto.getShellMsgMeta();
 
 		List<String> anchors = meta.getAnchorsList();
 		shellMsg.setAnchors(anchors);
@@ -112,16 +112,16 @@ public class ProtoSerializer implements ISerializer {
 	}
 
 	@Override
-	public void writeBoltMsg(BoltMsg immission) throws IOException {
-		ShellMessages.TupleMetadata tupleMetadata = ShellMessages.TupleMetadata.newBuilder()
-    			.setId(immission.getId())
-    			.setComp(immission.getComp())
-    			.setStream(immission.getStream())
-    			.setTask(immission.getTask())
+	public void writeBoltMsg(BoltMsg boltMsg) throws IOException {
+		ShellMessages.BoltMsgMeta meta = ShellMessages.BoltMsgMeta.newBuilder()
+    			.setId(boltMsg.getId())
+    			.setComp(boltMsg.getComp())
+    			.setStream(boltMsg.getStream())
+    			.setTask(boltMsg.getTask())
     			.build();
-    	ShellMessages.TupleProto.Builder tupleBuilder = ShellMessages.TupleProto.newBuilder()
-    			.setTupleMetadata(tupleMetadata);
-    	for (Object object: immission.getTuple()) {
+    	ShellMessages.BoltMsgProto.Builder tupleBuilder = ShellMessages.BoltMsgProto.newBuilder()
+    			.setBoltMsgMeta(meta);
+    	for (Object object: boltMsg.getTuple()) {
     		tupleBuilder.addContents((ByteString)object);
     	}
         writeMessage(tupleBuilder.build());

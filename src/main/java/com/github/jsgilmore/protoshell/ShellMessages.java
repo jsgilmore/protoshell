@@ -3441,7 +3441,7 @@ public final class ShellMessages {
     // @@protoc_insertion_point(class_scope:messages.Pid)
   }
 
-  public interface TupleMetadataOrBuilder
+  public interface BoltMsgMetaOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // optional string Id = 1;
@@ -3500,24 +3500,24 @@ public final class ShellMessages {
     long getTask();
   }
   /**
-   * Protobuf type {@code messages.TupleMetadata}
+   * Protobuf type {@code messages.BoltMsgMeta}
    */
-  public static final class TupleMetadata extends
+  public static final class BoltMsgMeta extends
       com.google.protobuf.GeneratedMessage
-      implements TupleMetadataOrBuilder {
-    // Use TupleMetadata.newBuilder() to construct.
-    private TupleMetadata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements BoltMsgMetaOrBuilder {
+    // Use BoltMsgMeta.newBuilder() to construct.
+    private BoltMsgMeta(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private TupleMetadata(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private BoltMsgMeta(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final TupleMetadata defaultInstance;
-    public static TupleMetadata getDefaultInstance() {
+    private static final BoltMsgMeta defaultInstance;
+    public static BoltMsgMeta getDefaultInstance() {
       return defaultInstance;
     }
 
-    public TupleMetadata getDefaultInstanceForType() {
+    public BoltMsgMeta getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -3527,7 +3527,7 @@ public final class ShellMessages {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private TupleMetadata(
+    private BoltMsgMeta(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -3584,28 +3584,28 @@ public final class ShellMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleMetadata_descriptor;
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgMeta_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleMetadata_fieldAccessorTable
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgMeta_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder.class);
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<TupleMetadata> PARSER =
-        new com.google.protobuf.AbstractParser<TupleMetadata>() {
-      public TupleMetadata parsePartialFrom(
+    public static com.google.protobuf.Parser<BoltMsgMeta> PARSER =
+        new com.google.protobuf.AbstractParser<BoltMsgMeta>() {
+      public BoltMsgMeta parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TupleMetadata(input, extensionRegistry);
+        return new BoltMsgMeta(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TupleMetadata> getParserForType() {
+    public com.google.protobuf.Parser<BoltMsgMeta> getParserForType() {
       return PARSER;
     }
 
@@ -3822,53 +3822,53 @@ public final class ShellMessages {
       return super.writeReplace();
     }
 
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(byte[] data)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseDelimitedFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseDelimitedFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -3877,7 +3877,7 @@ public final class ShellMessages {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata prototype) {
+    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -3889,24 +3889,24 @@ public final class ShellMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code messages.TupleMetadata}
+     * Protobuf type {@code messages.BoltMsgMeta}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder {
+       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleMetadata_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgMeta_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleMetadata_fieldAccessorTable
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgMeta_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder.class);
+                main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder.class);
       }
 
-      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.newBuilder()
+      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -3943,23 +3943,23 @@ public final class ShellMessages {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleMetadata_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgMeta_descriptor;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata getDefaultInstanceForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta getDefaultInstanceForType() {
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance();
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata build() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata result = buildPartial();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta build() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata buildPartial() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata(this);
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta buildPartial() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -3984,16 +3984,16 @@ public final class ShellMessages {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata) {
-          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata)other);
+        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta) {
+          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata other) {
-        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance()) return this;
+      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta other) {
+        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance()) return this;
         if (other.hasId()) {
           bitField0_ |= 0x00000001;
           id_ = other.id_;
@@ -4024,11 +4024,11 @@ public final class ShellMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata parsedMessage = null;
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata) e.getUnfinishedMessage();
+          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4294,33 +4294,33 @@ public final class ShellMessages {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:messages.TupleMetadata)
+      // @@protoc_insertion_point(builder_scope:messages.BoltMsgMeta)
     }
 
     static {
-      defaultInstance = new TupleMetadata(true);
+      defaultInstance = new BoltMsgMeta(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:messages.TupleMetadata)
+    // @@protoc_insertion_point(class_scope:messages.BoltMsgMeta)
   }
 
-  public interface TupleProtoOrBuilder
+  public interface BoltMsgProtoOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // optional .messages.TupleMetadata TupleMetadata = 1;
+    // optional .messages.BoltMsgMeta BoltMsgMeta = 1;
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    boolean hasTupleMetadata();
+    boolean hasBoltMsgMeta();
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata getTupleMetadata();
+    main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta getBoltMsgMeta();
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder getTupleMetadataOrBuilder();
+    main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder getBoltMsgMetaOrBuilder();
 
     // repeated bytes Contents = 2;
     /**
@@ -4337,24 +4337,24 @@ public final class ShellMessages {
     com.google.protobuf.ByteString getContents(int index);
   }
   /**
-   * Protobuf type {@code messages.TupleProto}
+   * Protobuf type {@code messages.BoltMsgProto}
    */
-  public static final class TupleProto extends
+  public static final class BoltMsgProto extends
       com.google.protobuf.GeneratedMessage
-      implements TupleProtoOrBuilder {
-    // Use TupleProto.newBuilder() to construct.
-    private TupleProto(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements BoltMsgProtoOrBuilder {
+    // Use BoltMsgProto.newBuilder() to construct.
+    private BoltMsgProto(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private TupleProto(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private BoltMsgProto(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final TupleProto defaultInstance;
-    public static TupleProto getDefaultInstance() {
+    private static final BoltMsgProto defaultInstance;
+    public static BoltMsgProto getDefaultInstance() {
       return defaultInstance;
     }
 
-    public TupleProto getDefaultInstanceForType() {
+    public BoltMsgProto getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -4364,7 +4364,7 @@ public final class ShellMessages {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private TupleProto(
+    private BoltMsgProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -4388,14 +4388,14 @@ public final class ShellMessages {
               break;
             }
             case 10: {
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder subBuilder = null;
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = tupleMetadata_.toBuilder();
+                subBuilder = boltMsgMeta_.toBuilder();
               }
-              tupleMetadata_ = input.readMessage(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.PARSER, extensionRegistry);
+              boltMsgMeta_ = input.readMessage(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(tupleMetadata_);
-                tupleMetadata_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(boltMsgMeta_);
+                boltMsgMeta_ = subBuilder.buildPartial();
               }
               bitField0_ |= 0x00000001;
               break;
@@ -4425,52 +4425,52 @@ public final class ShellMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleProto_descriptor;
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgProto_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleProto_fieldAccessorTable
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.Builder.class);
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<TupleProto> PARSER =
-        new com.google.protobuf.AbstractParser<TupleProto>() {
-      public TupleProto parsePartialFrom(
+    public static com.google.protobuf.Parser<BoltMsgProto> PARSER =
+        new com.google.protobuf.AbstractParser<BoltMsgProto>() {
+      public BoltMsgProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new TupleProto(input, extensionRegistry);
+        return new BoltMsgProto(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<TupleProto> getParserForType() {
+    public com.google.protobuf.Parser<BoltMsgProto> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
-    // optional .messages.TupleMetadata TupleMetadata = 1;
-    public static final int TUPLEMETADATA_FIELD_NUMBER = 1;
-    private main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata tupleMetadata_;
+    // optional .messages.BoltMsgMeta BoltMsgMeta = 1;
+    public static final int BOLTMSGMETA_FIELD_NUMBER = 1;
+    private main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta boltMsgMeta_;
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    public boolean hasTupleMetadata() {
+    public boolean hasBoltMsgMeta() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata getTupleMetadata() {
-      return tupleMetadata_;
+    public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta getBoltMsgMeta() {
+      return boltMsgMeta_;
     }
     /**
-     * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+     * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
      */
-    public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder getTupleMetadataOrBuilder() {
-      return tupleMetadata_;
+    public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder getBoltMsgMetaOrBuilder() {
+      return boltMsgMeta_;
     }
 
     // repeated bytes Contents = 2;
@@ -4497,7 +4497,7 @@ public final class ShellMessages {
     }
 
     private void initFields() {
-      tupleMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance();
+      boltMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance();
       contents_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -4513,7 +4513,7 @@ public final class ShellMessages {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, tupleMetadata_);
+        output.writeMessage(1, boltMsgMeta_);
       }
       for (int i = 0; i < contents_.size(); i++) {
         output.writeBytes(2, contents_.get(i));
@@ -4529,7 +4529,7 @@ public final class ShellMessages {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, tupleMetadata_);
+          .computeMessageSize(1, boltMsgMeta_);
       }
       {
         int dataSize = 0;
@@ -4552,53 +4552,53 @@ public final class ShellMessages {
       return super.writeReplace();
     }
 
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(byte[] data)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseDelimitedFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseDelimitedFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -4607,7 +4607,7 @@ public final class ShellMessages {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto prototype) {
+    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -4619,24 +4619,24 @@ public final class ShellMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code messages.TupleProto}
+     * Protobuf type {@code messages.BoltMsgProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProtoOrBuilder {
+       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleProto_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgProto_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleProto_fieldAccessorTable
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.Builder.class);
+                main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.Builder.class);
       }
 
-      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.newBuilder()
+      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -4648,7 +4648,7 @@ public final class ShellMessages {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getTupleMetadataFieldBuilder();
+          getBoltMsgMetaFieldBuilder();
         }
       }
       private static Builder create() {
@@ -4657,10 +4657,10 @@ public final class ShellMessages {
 
       public Builder clear() {
         super.clear();
-        if (tupleMetadataBuilder_ == null) {
-          tupleMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance();
+        if (boltMsgMetaBuilder_ == null) {
+          boltMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance();
         } else {
-          tupleMetadataBuilder_.clear();
+          boltMsgMetaBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         contents_ = java.util.Collections.emptyList();
@@ -4674,32 +4674,32 @@ public final class ShellMessages {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_TupleProto_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_BoltMsgProto_descriptor;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto getDefaultInstanceForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.getDefaultInstance();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto getDefaultInstanceForType() {
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.getDefaultInstance();
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto build() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto result = buildPartial();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto build() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto buildPartial() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto(this);
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto buildPartial() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        if (tupleMetadataBuilder_ == null) {
-          result.tupleMetadata_ = tupleMetadata_;
+        if (boltMsgMetaBuilder_ == null) {
+          result.boltMsgMeta_ = boltMsgMeta_;
         } else {
-          result.tupleMetadata_ = tupleMetadataBuilder_.build();
+          result.boltMsgMeta_ = boltMsgMetaBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           contents_ = java.util.Collections.unmodifiableList(contents_);
@@ -4712,18 +4712,18 @@ public final class ShellMessages {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto) {
-          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto)other);
+        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto) {
+          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto other) {
-        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto.getDefaultInstance()) return this;
-        if (other.hasTupleMetadata()) {
-          mergeTupleMetadata(other.getTupleMetadata());
+      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto other) {
+        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto.getDefaultInstance()) return this;
+        if (other.hasBoltMsgMeta()) {
+          mergeBoltMsgMeta(other.getBoltMsgMeta());
         }
         if (!other.contents_.isEmpty()) {
           if (contents_.isEmpty()) {
@@ -4747,11 +4747,11 @@ public final class ShellMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto parsedMessage = null;
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleProto) e.getUnfinishedMessage();
+          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgProto) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -4762,121 +4762,121 @@ public final class ShellMessages {
       }
       private int bitField0_;
 
-      // optional .messages.TupleMetadata TupleMetadata = 1;
-      private main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata tupleMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance();
+      // optional .messages.BoltMsgMeta BoltMsgMeta = 1;
+      private main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta boltMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder> tupleMetadataBuilder_;
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder> boltMsgMetaBuilder_;
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public boolean hasTupleMetadata() {
+      public boolean hasBoltMsgMeta() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata getTupleMetadata() {
-        if (tupleMetadataBuilder_ == null) {
-          return tupleMetadata_;
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta getBoltMsgMeta() {
+        if (boltMsgMetaBuilder_ == null) {
+          return boltMsgMeta_;
         } else {
-          return tupleMetadataBuilder_.getMessage();
+          return boltMsgMetaBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public Builder setTupleMetadata(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata value) {
-        if (tupleMetadataBuilder_ == null) {
+      public Builder setBoltMsgMeta(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta value) {
+        if (boltMsgMetaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          tupleMetadata_ = value;
+          boltMsgMeta_ = value;
           onChanged();
         } else {
-          tupleMetadataBuilder_.setMessage(value);
+          boltMsgMetaBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public Builder setTupleMetadata(
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder builderForValue) {
-        if (tupleMetadataBuilder_ == null) {
-          tupleMetadata_ = builderForValue.build();
+      public Builder setBoltMsgMeta(
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder builderForValue) {
+        if (boltMsgMetaBuilder_ == null) {
+          boltMsgMeta_ = builderForValue.build();
           onChanged();
         } else {
-          tupleMetadataBuilder_.setMessage(builderForValue.build());
+          boltMsgMetaBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public Builder mergeTupleMetadata(main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata value) {
-        if (tupleMetadataBuilder_ == null) {
+      public Builder mergeBoltMsgMeta(main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta value) {
+        if (boltMsgMetaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              tupleMetadata_ != main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance()) {
-            tupleMetadata_ =
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.newBuilder(tupleMetadata_).mergeFrom(value).buildPartial();
+              boltMsgMeta_ != main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance()) {
+            boltMsgMeta_ =
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.newBuilder(boltMsgMeta_).mergeFrom(value).buildPartial();
           } else {
-            tupleMetadata_ = value;
+            boltMsgMeta_ = value;
           }
           onChanged();
         } else {
-          tupleMetadataBuilder_.mergeFrom(value);
+          boltMsgMetaBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public Builder clearTupleMetadata() {
-        if (tupleMetadataBuilder_ == null) {
-          tupleMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.getDefaultInstance();
+      public Builder clearBoltMsgMeta() {
+        if (boltMsgMetaBuilder_ == null) {
+          boltMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.getDefaultInstance();
           onChanged();
         } else {
-          tupleMetadataBuilder_.clear();
+          boltMsgMetaBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder getTupleMetadataBuilder() {
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder getBoltMsgMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getTupleMetadataFieldBuilder().getBuilder();
+        return getBoltMsgMetaFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder getTupleMetadataOrBuilder() {
-        if (tupleMetadataBuilder_ != null) {
-          return tupleMetadataBuilder_.getMessageOrBuilder();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder getBoltMsgMetaOrBuilder() {
+        if (boltMsgMetaBuilder_ != null) {
+          return boltMsgMetaBuilder_.getMessageOrBuilder();
         } else {
-          return tupleMetadata_;
+          return boltMsgMeta_;
         }
       }
       /**
-       * <code>optional .messages.TupleMetadata TupleMetadata = 1;</code>
+       * <code>optional .messages.BoltMsgMeta BoltMsgMeta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder> 
-          getTupleMetadataFieldBuilder() {
-        if (tupleMetadataBuilder_ == null) {
-          tupleMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.TupleMetadataOrBuilder>(
-                  tupleMetadata_,
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder> 
+          getBoltMsgMetaFieldBuilder() {
+        if (boltMsgMetaBuilder_ == null) {
+          boltMsgMetaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.BoltMsgMetaOrBuilder>(
+                  boltMsgMeta_,
                   getParentForChildren(),
                   isClean());
-          tupleMetadata_ = null;
+          boltMsgMeta_ = null;
         }
-        return tupleMetadataBuilder_;
+        return boltMsgMetaBuilder_;
       }
 
       // repeated bytes Contents = 2;
@@ -4951,15 +4951,15 @@ public final class ShellMessages {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:messages.TupleProto)
+      // @@protoc_insertion_point(builder_scope:messages.BoltMsgProto)
     }
 
     static {
-      defaultInstance = new TupleProto(true);
+      defaultInstance = new BoltMsgProto(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:messages.TupleProto)
+    // @@protoc_insertion_point(class_scope:messages.BoltMsgProto)
   }
 
   public interface TaskIdsOrBuilder
@@ -6058,7 +6058,7 @@ public final class ShellMessages {
     // @@protoc_insertion_point(class_scope:messages.SpoutMsg)
   }
 
-  public interface EmissionMetadataOrBuilder
+  public interface ShellMsgMetaOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
     // optional string Command = 1;
@@ -6152,24 +6152,24 @@ public final class ShellMessages {
         getMsgBytes();
   }
   /**
-   * Protobuf type {@code messages.EmissionMetadata}
+   * Protobuf type {@code messages.ShellMsgMeta}
    */
-  public static final class EmissionMetadata extends
+  public static final class ShellMsgMeta extends
       com.google.protobuf.GeneratedMessage
-      implements EmissionMetadataOrBuilder {
-    // Use EmissionMetadata.newBuilder() to construct.
-    private EmissionMetadata(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements ShellMsgMetaOrBuilder {
+    // Use ShellMsgMeta.newBuilder() to construct.
+    private ShellMsgMeta(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private EmissionMetadata(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private ShellMsgMeta(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final EmissionMetadata defaultInstance;
-    public static EmissionMetadata getDefaultInstance() {
+    private static final ShellMsgMeta defaultInstance;
+    public static ShellMsgMeta getDefaultInstance() {
       return defaultInstance;
     }
 
-    public EmissionMetadata getDefaultInstanceForType() {
+    public ShellMsgMeta getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -6179,7 +6179,7 @@ public final class ShellMessages {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private EmissionMetadata(
+    private ShellMsgMeta(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -6252,28 +6252,28 @@ public final class ShellMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionMetadata_descriptor;
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgMeta_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionMetadata_fieldAccessorTable
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgMeta_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder.class);
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<EmissionMetadata> PARSER =
-        new com.google.protobuf.AbstractParser<EmissionMetadata>() {
-      public EmissionMetadata parsePartialFrom(
+    public static com.google.protobuf.Parser<ShellMsgMeta> PARSER =
+        new com.google.protobuf.AbstractParser<ShellMsgMeta>() {
+      public ShellMsgMeta parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EmissionMetadata(input, extensionRegistry);
+        return new ShellMsgMeta(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<EmissionMetadata> getParserForType() {
+    public com.google.protobuf.Parser<ShellMsgMeta> getParserForType() {
       return PARSER;
     }
 
@@ -6584,53 +6584,53 @@ public final class ShellMessages {
       return super.writeReplace();
     }
 
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(byte[] data)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseDelimitedFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseDelimitedFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -6639,7 +6639,7 @@ public final class ShellMessages {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata prototype) {
+    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -6651,24 +6651,24 @@ public final class ShellMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code messages.EmissionMetadata}
+     * Protobuf type {@code messages.ShellMsgMeta}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder {
+       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionMetadata_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgMeta_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionMetadata_fieldAccessorTable
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgMeta_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder.class);
+                main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder.class);
       }
 
-      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.newBuilder()
+      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -6709,23 +6709,23 @@ public final class ShellMessages {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionMetadata_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgMeta_descriptor;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata getDefaultInstanceForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta getDefaultInstanceForType() {
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance();
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata build() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata result = buildPartial();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta build() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata buildPartial() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata(this);
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta buildPartial() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
@@ -6760,16 +6760,16 @@ public final class ShellMessages {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata) {
-          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata)other);
+        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta) {
+          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata other) {
-        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance()) return this;
+      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta other) {
+        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance()) return this;
         if (other.hasCommand()) {
           bitField0_ |= 0x00000001;
           command_ = other.command_;
@@ -6815,11 +6815,11 @@ public final class ShellMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata parsedMessage = null;
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata) e.getUnfinishedMessage();
+          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7252,33 +7252,33 @@ public final class ShellMessages {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:messages.EmissionMetadata)
+      // @@protoc_insertion_point(builder_scope:messages.ShellMsgMeta)
     }
 
     static {
-      defaultInstance = new EmissionMetadata(true);
+      defaultInstance = new ShellMsgMeta(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:messages.EmissionMetadata)
+    // @@protoc_insertion_point(class_scope:messages.ShellMsgMeta)
   }
 
-  public interface EmissionProtoOrBuilder
+  public interface ShellMsgProtoOrBuilder
       extends com.google.protobuf.MessageOrBuilder {
 
-    // optional .messages.EmissionMetadata EmissionMetadata = 1;
+    // optional .messages.ShellMsgMeta ShellMsgMeta = 1;
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    boolean hasEmissionMetadata();
+    boolean hasShellMsgMeta();
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata getEmissionMetadata();
+    main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta getShellMsgMeta();
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder getEmissionMetadataOrBuilder();
+    main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder getShellMsgMetaOrBuilder();
 
     // repeated bytes Contents = 2;
     /**
@@ -7295,24 +7295,24 @@ public final class ShellMessages {
     com.google.protobuf.ByteString getContents(int index);
   }
   /**
-   * Protobuf type {@code messages.EmissionProto}
+   * Protobuf type {@code messages.ShellMsgProto}
    */
-  public static final class EmissionProto extends
+  public static final class ShellMsgProto extends
       com.google.protobuf.GeneratedMessage
-      implements EmissionProtoOrBuilder {
-    // Use EmissionProto.newBuilder() to construct.
-    private EmissionProto(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
+      implements ShellMsgProtoOrBuilder {
+    // Use ShellMsgProto.newBuilder() to construct.
+    private ShellMsgProto(com.google.protobuf.GeneratedMessage.Builder<?> builder) {
       super(builder);
       this.unknownFields = builder.getUnknownFields();
     }
-    private EmissionProto(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
+    private ShellMsgProto(boolean noInit) { this.unknownFields = com.google.protobuf.UnknownFieldSet.getDefaultInstance(); }
 
-    private static final EmissionProto defaultInstance;
-    public static EmissionProto getDefaultInstance() {
+    private static final ShellMsgProto defaultInstance;
+    public static ShellMsgProto getDefaultInstance() {
       return defaultInstance;
     }
 
-    public EmissionProto getDefaultInstanceForType() {
+    public ShellMsgProto getDefaultInstanceForType() {
       return defaultInstance;
     }
 
@@ -7322,7 +7322,7 @@ public final class ShellMessages {
         getUnknownFields() {
       return this.unknownFields;
     }
-    private EmissionProto(
+    private ShellMsgProto(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
@@ -7346,14 +7346,14 @@ public final class ShellMessages {
               break;
             }
             case 10: {
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder subBuilder = null;
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder subBuilder = null;
               if (((bitField0_ & 0x00000001) == 0x00000001)) {
-                subBuilder = emissionMetadata_.toBuilder();
+                subBuilder = shellMsgMeta_.toBuilder();
               }
-              emissionMetadata_ = input.readMessage(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.PARSER, extensionRegistry);
+              shellMsgMeta_ = input.readMessage(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.PARSER, extensionRegistry);
               if (subBuilder != null) {
-                subBuilder.mergeFrom(emissionMetadata_);
-                emissionMetadata_ = subBuilder.buildPartial();
+                subBuilder.mergeFrom(shellMsgMeta_);
+                shellMsgMeta_ = subBuilder.buildPartial();
               }
               bitField0_ |= 0x00000001;
               break;
@@ -7383,52 +7383,52 @@ public final class ShellMessages {
     }
     public static final com.google.protobuf.Descriptors.Descriptor
         getDescriptor() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionProto_descriptor;
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgProto_descriptor;
     }
 
     protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
         internalGetFieldAccessorTable() {
-      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionProto_fieldAccessorTable
+      return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgProto_fieldAccessorTable
           .ensureFieldAccessorsInitialized(
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.Builder.class);
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.Builder.class);
     }
 
-    public static com.google.protobuf.Parser<EmissionProto> PARSER =
-        new com.google.protobuf.AbstractParser<EmissionProto>() {
-      public EmissionProto parsePartialFrom(
+    public static com.google.protobuf.Parser<ShellMsgProto> PARSER =
+        new com.google.protobuf.AbstractParser<ShellMsgProto>() {
+      public ShellMsgProto parsePartialFrom(
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws com.google.protobuf.InvalidProtocolBufferException {
-        return new EmissionProto(input, extensionRegistry);
+        return new ShellMsgProto(input, extensionRegistry);
       }
     };
 
     @java.lang.Override
-    public com.google.protobuf.Parser<EmissionProto> getParserForType() {
+    public com.google.protobuf.Parser<ShellMsgProto> getParserForType() {
       return PARSER;
     }
 
     private int bitField0_;
-    // optional .messages.EmissionMetadata EmissionMetadata = 1;
-    public static final int EMISSIONMETADATA_FIELD_NUMBER = 1;
-    private main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata emissionMetadata_;
+    // optional .messages.ShellMsgMeta ShellMsgMeta = 1;
+    public static final int SHELLMSGMETA_FIELD_NUMBER = 1;
+    private main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta shellMsgMeta_;
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    public boolean hasEmissionMetadata() {
+    public boolean hasShellMsgMeta() {
       return ((bitField0_ & 0x00000001) == 0x00000001);
     }
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata getEmissionMetadata() {
-      return emissionMetadata_;
+    public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta getShellMsgMeta() {
+      return shellMsgMeta_;
     }
     /**
-     * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+     * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
      */
-    public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder getEmissionMetadataOrBuilder() {
-      return emissionMetadata_;
+    public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder getShellMsgMetaOrBuilder() {
+      return shellMsgMeta_;
     }
 
     // repeated bytes Contents = 2;
@@ -7455,7 +7455,7 @@ public final class ShellMessages {
     }
 
     private void initFields() {
-      emissionMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance();
+      shellMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance();
       contents_ = java.util.Collections.emptyList();
     }
     private byte memoizedIsInitialized = -1;
@@ -7471,7 +7471,7 @@ public final class ShellMessages {
                         throws java.io.IOException {
       getSerializedSize();
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
-        output.writeMessage(1, emissionMetadata_);
+        output.writeMessage(1, shellMsgMeta_);
       }
       for (int i = 0; i < contents_.size(); i++) {
         output.writeBytes(2, contents_.get(i));
@@ -7487,7 +7487,7 @@ public final class ShellMessages {
       size = 0;
       if (((bitField0_ & 0x00000001) == 0x00000001)) {
         size += com.google.protobuf.CodedOutputStream
-          .computeMessageSize(1, emissionMetadata_);
+          .computeMessageSize(1, shellMsgMeta_);
       }
       {
         int dataSize = 0;
@@ -7510,53 +7510,53 @@ public final class ShellMessages {
       return super.writeReplace();
     }
 
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         com.google.protobuf.ByteString data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         com.google.protobuf.ByteString data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(byte[] data)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(byte[] data)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         byte[] data,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws com.google.protobuf.InvalidProtocolBufferException {
       return PARSER.parseFrom(data, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseDelimitedFrom(java.io.InputStream input)
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseDelimitedFrom(java.io.InputStream input)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseDelimitedFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseDelimitedFrom(
         java.io.InputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
       return PARSER.parseDelimitedFrom(input, extensionRegistry);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         com.google.protobuf.CodedInputStream input)
         throws java.io.IOException {
       return PARSER.parseFrom(input);
     }
-    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parseFrom(
+    public static main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parseFrom(
         com.google.protobuf.CodedInputStream input,
         com.google.protobuf.ExtensionRegistryLite extensionRegistry)
         throws java.io.IOException {
@@ -7565,7 +7565,7 @@ public final class ShellMessages {
 
     public static Builder newBuilder() { return Builder.create(); }
     public Builder newBuilderForType() { return newBuilder(); }
-    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto prototype) {
+    public static Builder newBuilder(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto prototype) {
       return newBuilder().mergeFrom(prototype);
     }
     public Builder toBuilder() { return newBuilder(this); }
@@ -7577,24 +7577,24 @@ public final class ShellMessages {
       return builder;
     }
     /**
-     * Protobuf type {@code messages.EmissionProto}
+     * Protobuf type {@code messages.ShellMsgProto}
      */
     public static final class Builder extends
         com.google.protobuf.GeneratedMessage.Builder<Builder>
-       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProtoOrBuilder {
+       implements main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProtoOrBuilder {
       public static final com.google.protobuf.Descriptors.Descriptor
           getDescriptor() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionProto_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgProto_descriptor;
       }
 
       protected com.google.protobuf.GeneratedMessage.FieldAccessorTable
           internalGetFieldAccessorTable() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionProto_fieldAccessorTable
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgProto_fieldAccessorTable
             .ensureFieldAccessorsInitialized(
-                main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.Builder.class);
+                main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.class, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.Builder.class);
       }
 
-      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.newBuilder()
+      // Construct using main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.newBuilder()
       private Builder() {
         maybeForceBuilderInitialization();
       }
@@ -7606,7 +7606,7 @@ public final class ShellMessages {
       }
       private void maybeForceBuilderInitialization() {
         if (com.google.protobuf.GeneratedMessage.alwaysUseFieldBuilders) {
-          getEmissionMetadataFieldBuilder();
+          getShellMsgMetaFieldBuilder();
         }
       }
       private static Builder create() {
@@ -7615,10 +7615,10 @@ public final class ShellMessages {
 
       public Builder clear() {
         super.clear();
-        if (emissionMetadataBuilder_ == null) {
-          emissionMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance();
+        if (shellMsgMetaBuilder_ == null) {
+          shellMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance();
         } else {
-          emissionMetadataBuilder_.clear();
+          shellMsgMetaBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         contents_ = java.util.Collections.emptyList();
@@ -7632,32 +7632,32 @@ public final class ShellMessages {
 
       public com.google.protobuf.Descriptors.Descriptor
           getDescriptorForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_EmissionProto_descriptor;
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.internal_static_messages_ShellMsgProto_descriptor;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto getDefaultInstanceForType() {
-        return main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.getDefaultInstance();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto getDefaultInstanceForType() {
+        return main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.getDefaultInstance();
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto build() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto result = buildPartial();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto build() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto result = buildPartial();
         if (!result.isInitialized()) {
           throw newUninitializedMessageException(result);
         }
         return result;
       }
 
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto buildPartial() {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto(this);
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto buildPartial() {
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto result = new main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto(this);
         int from_bitField0_ = bitField0_;
         int to_bitField0_ = 0;
         if (((from_bitField0_ & 0x00000001) == 0x00000001)) {
           to_bitField0_ |= 0x00000001;
         }
-        if (emissionMetadataBuilder_ == null) {
-          result.emissionMetadata_ = emissionMetadata_;
+        if (shellMsgMetaBuilder_ == null) {
+          result.shellMsgMeta_ = shellMsgMeta_;
         } else {
-          result.emissionMetadata_ = emissionMetadataBuilder_.build();
+          result.shellMsgMeta_ = shellMsgMetaBuilder_.build();
         }
         if (((bitField0_ & 0x00000002) == 0x00000002)) {
           contents_ = java.util.Collections.unmodifiableList(contents_);
@@ -7670,18 +7670,18 @@ public final class ShellMessages {
       }
 
       public Builder mergeFrom(com.google.protobuf.Message other) {
-        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto) {
-          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto)other);
+        if (other instanceof main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto) {
+          return mergeFrom((main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto)other);
         } else {
           super.mergeFrom(other);
           return this;
         }
       }
 
-      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto other) {
-        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto.getDefaultInstance()) return this;
-        if (other.hasEmissionMetadata()) {
-          mergeEmissionMetadata(other.getEmissionMetadata());
+      public Builder mergeFrom(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto other) {
+        if (other == main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto.getDefaultInstance()) return this;
+        if (other.hasShellMsgMeta()) {
+          mergeShellMsgMeta(other.getShellMsgMeta());
         }
         if (!other.contents_.isEmpty()) {
           if (contents_.isEmpty()) {
@@ -7705,11 +7705,11 @@ public final class ShellMessages {
           com.google.protobuf.CodedInputStream input,
           com.google.protobuf.ExtensionRegistryLite extensionRegistry)
           throws java.io.IOException {
-        main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto parsedMessage = null;
+        main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto parsedMessage = null;
         try {
           parsedMessage = PARSER.parsePartialFrom(input, extensionRegistry);
         } catch (com.google.protobuf.InvalidProtocolBufferException e) {
-          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionProto) e.getUnfinishedMessage();
+          parsedMessage = (main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgProto) e.getUnfinishedMessage();
           throw e;
         } finally {
           if (parsedMessage != null) {
@@ -7720,121 +7720,121 @@ public final class ShellMessages {
       }
       private int bitField0_;
 
-      // optional .messages.EmissionMetadata EmissionMetadata = 1;
-      private main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata emissionMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance();
+      // optional .messages.ShellMsgMeta ShellMsgMeta = 1;
+      private main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta shellMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance();
       private com.google.protobuf.SingleFieldBuilder<
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder> emissionMetadataBuilder_;
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder> shellMsgMetaBuilder_;
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public boolean hasEmissionMetadata() {
+      public boolean hasShellMsgMeta() {
         return ((bitField0_ & 0x00000001) == 0x00000001);
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata getEmissionMetadata() {
-        if (emissionMetadataBuilder_ == null) {
-          return emissionMetadata_;
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta getShellMsgMeta() {
+        if (shellMsgMetaBuilder_ == null) {
+          return shellMsgMeta_;
         } else {
-          return emissionMetadataBuilder_.getMessage();
+          return shellMsgMetaBuilder_.getMessage();
         }
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public Builder setEmissionMetadata(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata value) {
-        if (emissionMetadataBuilder_ == null) {
+      public Builder setShellMsgMeta(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta value) {
+        if (shellMsgMetaBuilder_ == null) {
           if (value == null) {
             throw new NullPointerException();
           }
-          emissionMetadata_ = value;
+          shellMsgMeta_ = value;
           onChanged();
         } else {
-          emissionMetadataBuilder_.setMessage(value);
+          shellMsgMetaBuilder_.setMessage(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public Builder setEmissionMetadata(
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder builderForValue) {
-        if (emissionMetadataBuilder_ == null) {
-          emissionMetadata_ = builderForValue.build();
+      public Builder setShellMsgMeta(
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder builderForValue) {
+        if (shellMsgMetaBuilder_ == null) {
+          shellMsgMeta_ = builderForValue.build();
           onChanged();
         } else {
-          emissionMetadataBuilder_.setMessage(builderForValue.build());
+          shellMsgMetaBuilder_.setMessage(builderForValue.build());
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public Builder mergeEmissionMetadata(main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata value) {
-        if (emissionMetadataBuilder_ == null) {
+      public Builder mergeShellMsgMeta(main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta value) {
+        if (shellMsgMetaBuilder_ == null) {
           if (((bitField0_ & 0x00000001) == 0x00000001) &&
-              emissionMetadata_ != main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance()) {
-            emissionMetadata_ =
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.newBuilder(emissionMetadata_).mergeFrom(value).buildPartial();
+              shellMsgMeta_ != main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance()) {
+            shellMsgMeta_ =
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.newBuilder(shellMsgMeta_).mergeFrom(value).buildPartial();
           } else {
-            emissionMetadata_ = value;
+            shellMsgMeta_ = value;
           }
           onChanged();
         } else {
-          emissionMetadataBuilder_.mergeFrom(value);
+          shellMsgMetaBuilder_.mergeFrom(value);
         }
         bitField0_ |= 0x00000001;
         return this;
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public Builder clearEmissionMetadata() {
-        if (emissionMetadataBuilder_ == null) {
-          emissionMetadata_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.getDefaultInstance();
+      public Builder clearShellMsgMeta() {
+        if (shellMsgMetaBuilder_ == null) {
+          shellMsgMeta_ = main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.getDefaultInstance();
           onChanged();
         } else {
-          emissionMetadataBuilder_.clear();
+          shellMsgMetaBuilder_.clear();
         }
         bitField0_ = (bitField0_ & ~0x00000001);
         return this;
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder getEmissionMetadataBuilder() {
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder getShellMsgMetaBuilder() {
         bitField0_ |= 0x00000001;
         onChanged();
-        return getEmissionMetadataFieldBuilder().getBuilder();
+        return getShellMsgMetaFieldBuilder().getBuilder();
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
-      public main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder getEmissionMetadataOrBuilder() {
-        if (emissionMetadataBuilder_ != null) {
-          return emissionMetadataBuilder_.getMessageOrBuilder();
+      public main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder getShellMsgMetaOrBuilder() {
+        if (shellMsgMetaBuilder_ != null) {
+          return shellMsgMetaBuilder_.getMessageOrBuilder();
         } else {
-          return emissionMetadata_;
+          return shellMsgMeta_;
         }
       }
       /**
-       * <code>optional .messages.EmissionMetadata EmissionMetadata = 1;</code>
+       * <code>optional .messages.ShellMsgMeta ShellMsgMeta = 1;</code>
        */
       private com.google.protobuf.SingleFieldBuilder<
-          main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder> 
-          getEmissionMetadataFieldBuilder() {
-        if (emissionMetadataBuilder_ == null) {
-          emissionMetadataBuilder_ = new com.google.protobuf.SingleFieldBuilder<
-              main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadata.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.EmissionMetadataOrBuilder>(
-                  emissionMetadata_,
+          main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder> 
+          getShellMsgMetaFieldBuilder() {
+        if (shellMsgMetaBuilder_ == null) {
+          shellMsgMetaBuilder_ = new com.google.protobuf.SingleFieldBuilder<
+              main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMeta.Builder, main.java.com.github.jsgilmore.protoshell.ShellMessages.ShellMsgMetaOrBuilder>(
+                  shellMsgMeta_,
                   getParentForChildren(),
                   isClean());
-          emissionMetadata_ = null;
+          shellMsgMeta_ = null;
         }
-        return emissionMetadataBuilder_;
+        return shellMsgMetaBuilder_;
       }
 
       // repeated bytes Contents = 2;
@@ -7909,15 +7909,15 @@ public final class ShellMessages {
         return this;
       }
 
-      // @@protoc_insertion_point(builder_scope:messages.EmissionProto)
+      // @@protoc_insertion_point(builder_scope:messages.ShellMsgProto)
     }
 
     static {
-      defaultInstance = new EmissionProto(true);
+      defaultInstance = new ShellMsgProto(true);
       defaultInstance.initFields();
     }
 
-    // @@protoc_insertion_point(class_scope:messages.EmissionProto)
+    // @@protoc_insertion_point(class_scope:messages.ShellMsgProto)
   }
 
   public interface TestOrBuilder
@@ -8582,15 +8582,15 @@ public final class ShellMessages {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_messages_Pid_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_messages_TupleMetadata_descriptor;
+    internal_static_messages_BoltMsgMeta_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_messages_TupleMetadata_fieldAccessorTable;
+      internal_static_messages_BoltMsgMeta_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_messages_TupleProto_descriptor;
+    internal_static_messages_BoltMsgProto_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_messages_TupleProto_fieldAccessorTable;
+      internal_static_messages_BoltMsgProto_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_messages_TaskIds_descriptor;
   private static
@@ -8602,15 +8602,15 @@ public final class ShellMessages {
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
       internal_static_messages_SpoutMsg_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_messages_EmissionMetadata_descriptor;
+    internal_static_messages_ShellMsgMeta_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_messages_EmissionMetadata_fieldAccessorTable;
+      internal_static_messages_ShellMsgMeta_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
-    internal_static_messages_EmissionProto_descriptor;
+    internal_static_messages_ShellMsgProto_descriptor;
   private static
     com.google.protobuf.GeneratedMessage.FieldAccessorTable
-      internal_static_messages_EmissionProto_fieldAccessorTable;
+      internal_static_messages_ShellMsgProto_fieldAccessorTable;
   private static com.google.protobuf.Descriptors.Descriptor
     internal_static_messages_Test_descriptor;
   private static
@@ -8633,20 +8633,20 @@ public final class ShellMessages {
       "alue\030\002 \001(\t\"^\n\007Context\022\016\n\006PidDir\030\001 \001(\t\022$\n" +
       "\010Topology\030\002 \001(\0132\022.messages.Topology\022\035\n\005C" +
       "onfs\030\003 \003(\0132\016.messages.Conf\"\022\n\003Pid\022\013\n\003Pid" +
-      "\030\001 \001(\005\"G\n\rTupleMetadata\022\n\n\002Id\030\001 \001(\t\022\014\n\004C" +
-      "omp\030\002 \001(\t\022\016\n\006Stream\030\003 \001(\t\022\014\n\004Task\030\004 \001(\003\"",
-      "N\n\nTupleProto\022.\n\rTupleMetadata\030\001 \001(\0132\027.m" +
-      "essages.TupleMetadata\022\020\n\010Contents\030\002 \003(\014\"" +
-      "\032\n\007TaskIds\022\017\n\007TaskIds\030\001 \003(\005\"\'\n\010SpoutMsg\022" +
-      "\017\n\007Command\030\001 \001(\t\022\n\n\002Id\030\002 \001(\t\"k\n\020Emission" +
-      "Metadata\022\017\n\007Command\030\001 \001(\t\022\n\n\002Id\030\002 \001(\t\022\017\n" +
-      "\007Anchors\030\003 \003(\t\022\016\n\006Stream\030\004 \001(\t\022\014\n\004Task\030\005" +
-      " \001(\003\022\013\n\003Msg\030\006 \001(\t\"W\n\rEmissionProto\0224\n\020Em" +
-      "issionMetadata\030\001 \001(\0132\032.messages.Emission" +
-      "Metadata\022\020\n\010Contents\030\002 \003(\014\"2\n\004Test\022\014\n\004Na" +
-      "me\030\001 \001(\t\022\016\n\006Number\030\002 \001(\005\022\014\n\004Data\030\003 \001(\014B:",
-      "\n)main.java.com.github.jsgilmore.protosh" +
-      "ellB\rShellMessages"
+      "\030\001 \001(\005\"E\n\013BoltMsgMeta\022\n\n\002Id\030\001 \001(\t\022\014\n\004Com" +
+      "p\030\002 \001(\t\022\016\n\006Stream\030\003 \001(\t\022\014\n\004Task\030\004 \001(\003\"L\n",
+      "\014BoltMsgProto\022*\n\013BoltMsgMeta\030\001 \001(\0132\025.mes" +
+      "sages.BoltMsgMeta\022\020\n\010Contents\030\002 \003(\014\"\032\n\007T" +
+      "askIds\022\017\n\007TaskIds\030\001 \003(\005\"\'\n\010SpoutMsg\022\017\n\007C" +
+      "ommand\030\001 \001(\t\022\n\n\002Id\030\002 \001(\t\"g\n\014ShellMsgMeta" +
+      "\022\017\n\007Command\030\001 \001(\t\022\n\n\002Id\030\002 \001(\t\022\017\n\007Anchors" +
+      "\030\003 \003(\t\022\016\n\006Stream\030\004 \001(\t\022\014\n\004Task\030\005 \001(\003\022\013\n\003" +
+      "Msg\030\006 \001(\t\"O\n\rShellMsgProto\022,\n\014ShellMsgMe" +
+      "ta\030\001 \001(\0132\026.messages.ShellMsgMeta\022\020\n\010Cont" +
+      "ents\030\002 \003(\014\"2\n\004Test\022\014\n\004Name\030\001 \001(\t\022\016\n\006Numb" +
+      "er\030\002 \001(\005\022\014\n\004Data\030\003 \001(\014B:\n)main.java.com.",
+      "github.jsgilmore.protoshellB\rShellMessag" +
+      "es"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
       new com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner() {
@@ -8683,18 +8683,18 @@ public final class ShellMessages {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_messages_Pid_descriptor,
               new java.lang.String[] { "Pid", });
-          internal_static_messages_TupleMetadata_descriptor =
+          internal_static_messages_BoltMsgMeta_descriptor =
             getDescriptor().getMessageTypes().get(5);
-          internal_static_messages_TupleMetadata_fieldAccessorTable = new
+          internal_static_messages_BoltMsgMeta_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_messages_TupleMetadata_descriptor,
+              internal_static_messages_BoltMsgMeta_descriptor,
               new java.lang.String[] { "Id", "Comp", "Stream", "Task", });
-          internal_static_messages_TupleProto_descriptor =
+          internal_static_messages_BoltMsgProto_descriptor =
             getDescriptor().getMessageTypes().get(6);
-          internal_static_messages_TupleProto_fieldAccessorTable = new
+          internal_static_messages_BoltMsgProto_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_messages_TupleProto_descriptor,
-              new java.lang.String[] { "TupleMetadata", "Contents", });
+              internal_static_messages_BoltMsgProto_descriptor,
+              new java.lang.String[] { "BoltMsgMeta", "Contents", });
           internal_static_messages_TaskIds_descriptor =
             getDescriptor().getMessageTypes().get(7);
           internal_static_messages_TaskIds_fieldAccessorTable = new
@@ -8707,18 +8707,18 @@ public final class ShellMessages {
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
               internal_static_messages_SpoutMsg_descriptor,
               new java.lang.String[] { "Command", "Id", });
-          internal_static_messages_EmissionMetadata_descriptor =
+          internal_static_messages_ShellMsgMeta_descriptor =
             getDescriptor().getMessageTypes().get(9);
-          internal_static_messages_EmissionMetadata_fieldAccessorTable = new
+          internal_static_messages_ShellMsgMeta_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_messages_EmissionMetadata_descriptor,
+              internal_static_messages_ShellMsgMeta_descriptor,
               new java.lang.String[] { "Command", "Id", "Anchors", "Stream", "Task", "Msg", });
-          internal_static_messages_EmissionProto_descriptor =
+          internal_static_messages_ShellMsgProto_descriptor =
             getDescriptor().getMessageTypes().get(10);
-          internal_static_messages_EmissionProto_fieldAccessorTable = new
+          internal_static_messages_ShellMsgProto_fieldAccessorTable = new
             com.google.protobuf.GeneratedMessage.FieldAccessorTable(
-              internal_static_messages_EmissionProto_descriptor,
-              new java.lang.String[] { "EmissionMetadata", "Contents", });
+              internal_static_messages_ShellMsgProto_descriptor,
+              new java.lang.String[] { "ShellMsgMeta", "Contents", });
           internal_static_messages_Test_descriptor =
             getDescriptor().getMessageTypes().get(11);
           internal_static_messages_Test_fieldAccessorTable = new
