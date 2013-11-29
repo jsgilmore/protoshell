@@ -14,7 +14,7 @@
 
 package messages;
 
-option java_package = "main.java.com.github.jsgilmore.protoshell";
+option java_package = "com.github.jsgilmore.protoshell";
 option java_outer_classname = "ShellMessages";
 
 message TaskComponentMapping {
@@ -68,8 +68,9 @@ message ShellMsgMeta {
 	optional string Id = 2;
 	repeated string Anchors = 3;
 	optional string Stream = 4;
-	optional int64 Task = 5;
-	optional string Msg = 6;
+	optional int64  Task = 5;
+	optional bool   NeedTaskIds = 6;
+	optional string Msg = 7;
 }
 
 message ShellMsgProto {

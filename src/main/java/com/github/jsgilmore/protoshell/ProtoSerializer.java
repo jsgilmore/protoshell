@@ -12,7 +12,7 @@
 //   See the License for the specific language governing permissions and
 //   limitations under the License.
 
-package main.java.com.github.jsgilmore.protoshell;
+package com.github.jsgilmore.protoshell;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -21,6 +21,8 @@ import java.io.OutputStream;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+
+import org.apache.log4j.Logger;
 
 import backtype.storm.multilang.ShellMsg;
 import backtype.storm.multilang.ISerializer;
@@ -34,19 +36,16 @@ import com.google.protobuf.Message;
 import com.google.protobuf.Parser;
 
 public class ProtoSerializer implements ISerializer {
+    public static Logger LOG = Logger.getLogger(ProtoSerializer.class);
 	private DataOutputStream processIn;
 	private InputStream processOut;
 
-	@Override
 	public void initialize(OutputStream processIn, InputStream processOut) {
 		this.processIn = new DataOutputStream(processIn);
         this.processOut = processOut;
 	}
 
-	@Override
-	public Number connect(Map conf, TopologyContext context)
-			throws IOException, NoOutputException {
-
+	public Number connect(Map conf, TopologyContext context) throws IOException, NoOutputException {
         ShellMessages.Context.Builder setupInfo = ShellMessages.Context.newBuilder()
         		.setPidDir(context.getPIDDir());
 
@@ -75,43 +74,38 @@ public class ProtoSerializer implements ISerializer {
         }
         setupInfo.setTopology(topologyBuilder.build());
 
-        writeMessage(setupInfo.build());
+        ShellMessages.Context setupMsg = setupInfo.build();
+        LOG.info("Writing configuration to shell component");
+        writeMessage(setupMsg);
 
+        LOG.info("Waiting for pid from component");
         ShellMessages.Pid pidMsg = (ShellMessages.Pid)readMessage(ShellMessages.Pid.PARSER);
+        LOG.info("Shell component connection established.");
         return (Number)pidMsg.getPid();
 	}
 
-	@Override
 	public ShellMsg readShellMsg() throws IOException, NoOutputException {
 		ShellMessages.ShellMsgProto emissionProto = (ShellMessages.ShellMsgProto)readMessage(ShellMessages.ShellMsgProto.PARSER);
 		ShellMsg shellMsg = new ShellMsg();
 		ShellMessages.ShellMsgMeta meta = emissionProto.getShellMsgMeta();
 
-		List<String> anchors = meta.getAnchorsList();
-		shellMsg.setAnchors(anchors);
+		shellMsg.setAnchors(meta.getAnchorsList());
+		shellMsg.setCommand(meta.getCommand());
+		shellMsg.setId(meta.getId());
+		shellMsg.setMsg(meta.getMsg());
+		shellMsg.setStream(meta.getStream());
+		shellMsg.setTask(meta.getTask());
+        shellMsg.setNeedTaskIds(meta.getNeedTaskIds());
 
-		String command = meta.getCommand();
-		shellMsg.setCommand(command);
-
-		String id = meta.getId();
-		shellMsg.setId(id);
-
-		String msg = meta.getMsg();
-		shellMsg.setMsg(msg);
-
-		String stream = meta.getStream();
-		shellMsg.setStream(stream);
-
-		long task = meta.getTask();
-		shellMsg.setTask(task);
-
+		// Java protocol buffers encode bytes in their ByteStrong format
+		// Kryo cannot serialize ByteStrings
+		// TODO Get Kryo to serialise ByteStrings
 		for (ByteString o: emissionProto.getContentsList()) {
-		    shellMsg.addTuple(o);
+		    shellMsg.addTuple(o.toByteArray());
 		}
 		return shellMsg;
 	}
 
-	@Override
 	public void writeBoltMsg(BoltMsg boltMsg) throws IOException {
 		ShellMessages.BoltMsgMeta meta = ShellMessages.BoltMsgMeta.newBuilder()
     			.setId(boltMsg.getId())
@@ -122,12 +116,12 @@ public class ProtoSerializer implements ISerializer {
     	ShellMessages.BoltMsgProto.Builder tupleBuilder = ShellMessages.BoltMsgProto.newBuilder()
     			.setBoltMsgMeta(meta);
     	for (Object object: boltMsg.getTuple()) {
-    		tupleBuilder.addContents((ByteString)object);
+    	    ByteString byteString = ByteString.copyFrom((byte[])object);
+            tupleBuilder.addContents(byteString);
     	}
         writeMessage(tupleBuilder.build());
 	}
 
-	@Override
 	public void writeSpoutMsg(SpoutMsg msg) throws IOException {
 		ShellMessages.SpoutMsg.Builder spoutProto = ShellMessages.SpoutMsg.newBuilder();
 		if (msg.getCommand() == "next") {
@@ -140,10 +134,9 @@ public class ProtoSerializer implements ISerializer {
         writeMessage(spoutProto.build());
 	}
 
-	@Override
 	public void writeTaskIds(List<Integer> taskIds) throws IOException {
 		ShellMessages.TaskIds.Builder tasksProto = ShellMessages.TaskIds.newBuilder();
-		for (int taskId : taskIds) {
+		for (Integer taskId : taskIds) {
 			tasksProto.addTaskIds(taskId);
 		}
         writeMessage(tasksProto.build());
@@ -151,9 +144,14 @@ public class ProtoSerializer implements ISerializer {
 
 	private void writeMessage(Message msg) throws IOException {
         msg.writeDelimitedTo(processIn);
+        processIn.flush();
     }
 
 	private Object readMessage(Parser parser) throws IOException {
-        return parser.parseDelimitedFrom(processOut);
+	    Object message = parser.parseDelimitedFrom(processOut);
+	    if (message == null) {
+	        throw new RuntimeException("Shell process died");
+	    }
+	    return message;
     }
 }
