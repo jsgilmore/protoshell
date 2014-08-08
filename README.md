@@ -11,14 +11,14 @@ Protoshell is a binary communications protocol, as opposed to the text-based
 communications protocol used in Storm's JSON serialiser. It transfers varint
 delimited bytes, where each byte slice is a serialised protocol buffer structure.
 
-Please refer to GoStorm (https://github.com/jsgilmore/gostorm) and its protobuf
+Please refer to [GoStorm](https://github.com/jsgilmore/gostorm) and its protobuf
 encoding for a reference implementation of a third-party non-JVM language implementation
 of the Storm multilang protocol written in Go and requiring the protoshell serialiser.
 
-Also not that custom multilang serialisers are not supported in Storm 0.9.0 and
-to make use of this support please use the custom Storm implementation at
-https://github.com/jsgilmore/storm . A pull request has been opened and this
-functionality should be in Storm in 0.9.1.
+Storm 0.9.2 and later now support pluggable multilang serialisation, based on this protobuf work, which means that protoshell can now be used with standard Storm.
+
+#Performance
+Protoshell currently provides three to fives times higher throughput, when compared to the standard Storm JSON multilang protocol.
 
 #The protocol
 To simplify the process of implementing third-party components in other languges,
