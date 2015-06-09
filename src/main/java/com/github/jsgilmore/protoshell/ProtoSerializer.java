@@ -39,12 +39,14 @@ public class ProtoSerializer implements ISerializer {
     public static Logger LOG = Logger.getLogger(ProtoSerializer.class);
 	private DataOutputStream processIn;
 	private InputStream processOut;
+	private static final long serialVersionUID = 1L;
 
 	public void initialize(OutputStream processIn, InputStream processOut) {
 		this.processIn = new DataOutputStream(processIn);
         this.processOut = processOut;
 	}
 
+	@SuppressWarnings({"rawtypes","unchecked"})
 	public Number connect(Map conf, TopologyContext context) throws IOException, NoOutputException {
         ShellMessages.Context.Builder setupInfo = ShellMessages.Context.newBuilder()
         		.setPidDir(context.getPIDDir());
@@ -129,7 +131,7 @@ public class ProtoSerializer implements ISerializer {
 			spoutProto.clearId();
 		} else {
 			spoutProto.setCommand(msg.getCommand());
-			spoutProto.setId(msg.getId());
+			spoutProto.setId(msg.getId().toString());
 		}
         writeMessage(spoutProto.build());
 	}
@@ -147,6 +149,7 @@ public class ProtoSerializer implements ISerializer {
         processIn.flush();
     }
 
+	@SuppressWarnings("rawtypes")
 	private Object readMessage(Parser parser) throws IOException {
 	    Object message = parser.parseDelimitedFrom(processOut);
 	    if (message == null) {
