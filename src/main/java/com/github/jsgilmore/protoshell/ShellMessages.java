@@ -1284,7 +1284,7 @@ public final class ShellMessages {
           java.lang.Iterable<? extends com.github.jsgilmore.protoshell.ShellMessages.TaskComponentMapping> values) {
         if (taskComponentMappingsBuilder_ == null) {
           ensureTaskComponentMappingsIsMutable();
-          super.addAll(values, taskComponentMappings_);
+          Builder.addAll(values, taskComponentMappings_);
           onChanged();
         } else {
           taskComponentMappingsBuilder_.addAllMessages(values);
@@ -2936,7 +2936,7 @@ public final class ShellMessages {
           java.lang.Iterable<? extends com.github.jsgilmore.protoshell.ShellMessages.Conf> values) {
         if (confsBuilder_ == null) {
           ensureConfsIsMutable();
-          super.addAll(values, confs_);
+          Builder.addAll(values, confs_);
           onChanged();
         } else {
           confsBuilder_.addAllMessages(values);
@@ -4937,7 +4937,7 @@ public final class ShellMessages {
       public Builder addAllContents(
           java.lang.Iterable<? extends com.google.protobuf.ByteString> values) {
         ensureContentsIsMutable();
-        super.addAll(values, contents_);
+        Builder.addAll(values, contents_);
         onChanged();
         return this;
       }
@@ -5406,7 +5406,7 @@ public final class ShellMessages {
       public Builder addAllTaskIds(
           java.lang.Iterable<? extends java.lang.Integer> values) {
         ensureTaskIdsIsMutable();
-        super.addAll(values, taskIds_);
+        Builder.addAll(values, taskIds_);
         onChanged();
         return this;
       }
@@ -7092,7 +7092,7 @@ public final class ShellMessages {
       public Builder addAllAnchors(
           java.lang.Iterable<java.lang.String> values) {
         ensureAnchorsIsMutable();
-        super.addAll(values, anchors_);
+        Builder.addAll(values, anchors_);
         onChanged();
         return this;
       }
@@ -7976,7 +7976,7 @@ public final class ShellMessages {
       public Builder addAllContents(
           java.lang.Iterable<? extends com.google.protobuf.ByteString> values) {
         ensureContentsIsMutable();
-        super.addAll(values, contents_);
+        Builder.addAll(values, contents_);
         onChanged();
         return this;
       }
